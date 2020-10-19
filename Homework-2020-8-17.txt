@@ -1,0 +1,83 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id=")1boWZ@@d~#RcbVs~e~b">sum</variable>
+    <variable id="_pfQe^i4R/}R+4uv1N6Q">counter</variable>
+  </variables>
+  <block type="variables_set" id="Ve-Asan^Qs+(s8~3|3U[" x="49" y="40">
+    <field name="VAR" id=")1boWZ@@d~#RcbVs~e~b">sum</field>
+    <value name="VALUE">
+      <block type="math_number" id="SRZGYn#jbT7mI9mH9rms">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id="g!dT#+!1[wf@mjQjlSYN">
+        <field name="VAR" id="_pfQe^i4R/}R+4uv1N6Q">counter</field>
+        <value name="VALUE">
+          <block type="math_number" id="5L?/QZ8@,};FI]CkGAaj">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_whileUntil" id="gHd-!.KUN=(/wX8$IW4R">
+            <field name="MODE">WHILE</field>
+            <value name="BOOL">
+              <block type="logic_compare" id="T46cIdCY]e__D6Eq2Omy">
+                <field name="OP">LT</field>
+                <value name="A">
+                  <block type="variables_get" id="u,5H5@5;Kda0TKjYpa~q">
+                    <field name="VAR" id="_pfQe^i4R/}R+4uv1N6Q">counter</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="mHf]^On].nylsp5PiG}N">
+                    <field name="NUM">10</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="math_change" id="3qpW2J|`=sAddE]ZTN2#">
+                <field name="VAR" id="_pfQe^i4R/}R+4uv1N6Q">counter</field>
+                <value name="DELTA">
+                  <shadow type="math_number" id="AqDl5).pz~jp)f4I|ma%">
+                    <field name="NUM">1</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="variables_set" id="=cU#Ywh=!h_gRR~!m^e2">
+                    <field name="VAR" id=")1boWZ@@d~#RcbVs~e~b">sum</field>
+                    <value name="VALUE">
+                      <block type="math_arithmetic" id="n1jrww(;O4pM+Qf?*?RQ">
+                        <field name="OP">ADD</field>
+                        <value name="A">
+                          <block type="variables_get" id="+f0_f.2DLW]oVL.hRr/N">
+                            <field name="VAR" id="_pfQe^i4R/}R+4uv1N6Q">counter</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="variables_get" id="h?zsSUvI+.tLYn!LyTxN">
+                            <field name="VAR" id=")1boWZ@@d~#RcbVs~e~b">sum</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="text_print" id="1q;k`lr+B`8}PbAP9{v4">
+                <value name="TEXT">
+                  <block type="variables_get" id="Ab-^XZ/MWy-cSh3H|-Tm">
+                    <field name="VAR" id=")1boWZ@@d~#RcbVs~e~b">sum</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
