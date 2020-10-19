@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title>Blockly Demo: Generating JavaScript</title>
-  <script src="/Users/akshath/Documents/GitHub/blockly_compressed.js"></script>
-  <script src="/Users/akshath/Documents/GitHub/blocks_compressed.js"></script>
-  <script src="/Users/akshath/Documents/GitHub/javascript_compressed.js"></script>
-  <script src="/Users/akshath/Documents/GitHub/msg/js/en.js"></script>
+  <script src="/Users/akshath/Documents/GitHub/blockly/blockly_compressed.js"></script>
+  <script src="/Users/akshath/Documents/GitHub/blockly/blocks_compressed.js"></script>
+  <script src="/Users/akshath/Documents/GitHub/blockly/javascript_compressed.js"></script>
+  <script src="/Users/akshath/Documents/GitHub/blockly/msg/js/en.js"></script>
   <style>
     body {
       background-color: #fff;
@@ -20,7 +20,7 @@
 </head>
 <body>
   <h1><a href="https://developers.google.com/blockly/">Blockly</a> &gt;
-    <a href="/Users/akshath/Documents/GitHub/demos/index.html">Demos</a> &gt; Generating JavaScript</h1>
+    <a href="/Users/akshath/Documents/GitHub/blockly/demos/index.html">Demos</a> &gt; Generating JavaScript</h1>
 
   <p>This is a simple demo of generating code from blocks and running
   the code in a sandboxed JavaScript interpreter.</p>
@@ -367,7 +367,7 @@
 
   <script>
     var demoWorkspace = Blockly.inject('blocklyDiv',
-        {media: '/Users/akshath/Documents/GitHub/media/',
+        {media: '/Users/akshath/Documents/GitHub/blockly/media/',
          toolbox: document.getElementById('toolbox')});
     Blockly.Xml.domToWorkspace(document.getElementById('startBlocks'),
                                demoWorkspace);
